@@ -23,7 +23,7 @@ code{font-weight:normal; font-style:normal; font-family:Georgia, "Times New Roma
 .fl_left{float:left;}
 .fl_right{float:right;}
 
-img{margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;}
+img{margin:0; padding:0; border:none; line-height:normal; vertical-align:middle; box-shadow: 5px 5px 20px #989898}
 .imgholder, .imgl, .imgr{padding:4px; border:1px solid #D6D6D6; text-align:center;}
 .imgl{float:left; margin:0 15px 15px 0; clear:left;}
 .imgr{float:right; margin:0 0 15px 15px; clear:right;}
@@ -114,7 +114,7 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 #container #homepage #services{}
 #container #homepage #services article{}
 #container #homepage #services article figure{}
-#container #homepage #services article figure img{margin:0 0 15px 0; box-shadow: 5px 5px 20px #989898}
+#container #homepage #services article figure img{margin:0 0 15px 0; width: 100%}
 #container #homepage #services article figure figcaption{}
 #container #homepage #services article figure h2{font-size:14px; font-weight:bold;}
 #container #homepage #services article figure footer{}
