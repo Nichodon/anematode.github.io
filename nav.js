@@ -6,8 +6,14 @@ document.getElementById("navMenu").innerHTML =
 '<nav>'+
     '<ul>'+
         '<li><a href="index.html">Home</a></li>'+
-        '<li><a href="#">2016 Season</a></li>'+
-        '<li><a href="#">2017 Season</a></li>'+
+		'<li class="dropdown">' +
+    		'<a href="javascript:void(0)">Seasons</a>' +
+			'<div class="dropdown-content">' +
+				'<a href="#" class="drop">2016</a>' +
+   				'<a href="#" class="drop">2017</a>' +
+				'<a href="#" class="drop">2018</a>' +
+   			'</div>' +
+  		'</li>' +
         '<li><a href="#">Our Robots</a></li>'+
         '<li><a href="#">FTC Info</a></li>'+
         '<li class="last"><a href="about.html">About Us</a></li>'+
