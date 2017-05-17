@@ -1,6 +1,6 @@
 document.getElementById("navMenu").innerHTML =
 '<div id="hgroup">'+
-    '<h1><a href="#">FTC Team 11101</a></h1>'+
+    '<h1><a href="index.html">FTC Team 11101</a></h1>'+
     '<h2>Robot Fanatics</h2>'+
 '</div>'+
 '<nav>'+
