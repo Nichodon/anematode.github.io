@@ -7,6 +7,9 @@
         height: 14px;
         vertical-align: middle;
     }
+    .code {
+        font-family: Consolas, Helvetica, sans-serif;
+    }
 </style>
 <script type="text/javascript" async
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -120,12 +123,27 @@
 <br><div style="width:768px; margin:0 auto;">
     <figure>
         <img src="article1/fractal3.png" alt="Fractal" width="512">
-            <figcaption><p align="center">Figure 12: Fractal for \(f_c(z)=z^3+c\).</p></figcaption>
+            <figcaption><p align="center">Figure 12: Fractal for \(f_c(z)=z^2+\sqrt{z}+0.8c\).</p></figcaption>
             </figure>
 </div>
 <br>
 
-<p>Beautiful. They share certain characteristics... but they're all different.</p>
+<p>Beautiful. They share certain characteristics... but they're all different. In our next article, we examine paths of iteration, fixed points, and other properties of various fractals.</p>
+    <p>Now, let's see how these images were generated in code. My language of choice was <a href="http://www.cplusplus.com/">C++</a>, but any language with a complex number type will do with this method.</p>
+    <p>First, we define our constants. These are 1. the image's height and width, 2. the bounds on the real axis, 3. the bounds on the imaginary axis, 4. the number of iterations to execute, and 5. the "escape radius," or the magnitude of the complex number where it is treated as if it will go to infinity. For taking a picture of the Mandelbrot set, the following settings are suitable, but you may want to adjust them for greater accuracy. For example, if the fractal boundary is too smooth, increasing the iteration count might help. For most fractals, an escape radius of 2 is too small, so set it to some number like 50 for fractals besides the Mandelbrot set. Changing the real and imaginary boundaries allow us to look at different parts of a fractal, including creating zooms into fractals, which we will consider in another article.</p>
+    <div class="code",align="center">
+        const int w = 2048;					// Width, in pixels, of the output image
+const int h = 2048;					// Height, in pixels, of the output image
+
+const float re_min = -2.5;				// Real value of the left edge of the image
+const float re_max = 1.5;				// Real value of the right edge of the image
+const float im_min = -2;				// Imaginary value of the bottom edge of the image
+const float im_max = 2;					// Imaginary value of the top edge of the image
+
+const int iterations = 255;				// Number of iterations required to assume boundedness under iteration
+const int escaperadius = 2;				// Critical radius determining non-boundedness under iteration
+        
+    </div>
 <p>Hopefully this has been a good introduction to fractals in the complex plane!</p>
 
 </html>
