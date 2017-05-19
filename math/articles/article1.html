@@ -144,6 +144,11 @@ const int iterations = 255;				// Number of iterations required to assume bounde
 const int escaperadius = 2;				// Critical radius determining non-boundedness under iteration<br>
         <br>
     </div>
+<p>Now, we define two constants that will be used later in the program. Color decrement decreases the color intensity by the appropriate amount such that by the end of all iterations, if the number is in the fractal, the intensity will be 0.</p>
+<div class="code",align="left">
+const float colordecrement = 250.0/iterations;			// Change in pixel darkness after each iteration<br>
+	const int radiussquared = escaperadius * escaperadius;<br>
+    <br></div>
 <p>Hopefully this has been a good introduction to fractals in the complex plane!</p>
 
 </html>
