@@ -44,7 +44,7 @@
             </figure>
 </div>
 <br>
-<p>It seems \(c=0.2+0.5\) does not diverge to infinity; it stays bounded. Thus, it is in the Mandelbrot set. Overlaying a point \(c=0.2+0.5i\) on the original image, we can see that, indeed, the point lies in a black region. (The point is red; the x and y axes are also indicated.)</p>
+<p>It seems \(c=0.2+0.5\) does not diverge to infinity; it stays bounded. Thus, it is in the Mandelbrot set. Overlaying a point \(c=0.2+0.5i\) on the original image, we can see that, indeed, the point lies in a black region. (The x and y axes are also indicated.)</p>
 <div style="width:768px; margin:0 auto;">
     <figure>
         <img src="article1/mandelbrot2.png" alt="Mandelbrot Set  (Real axis: [-2.5,1.5], Imaginary axis: [-2,2], 500 iterations.)" width="768" height="525">
@@ -52,7 +52,7 @@
             </figure>
 </div>
 <br>
-<p>This repeated calculation is done for every point - or, at least, every pixel in the image - and if the calculation stays bounded to a reasonable number of iterations, we can assume that it probably will stay bounded forever. All the images up to this point have been done with 500 iterations, though much less are needed at this level of zoom.</p>
+<p>This repeated calculation is done for every point - or, at least, every pixel in the image - and if the calculation stays bounded to a reasonable number of iterations, we can assume that it probably will stay bounded forever. All the images up to this point have been done with 500 iterations.</p>
 <p>But what's so interesting about the Mandelbrot set? The answer lies in its intrinsically fractal nature. For example, suppose we zoom in on the Mandelbrot set, say, on the gray rectangle highlighted here:</p>
 <div style="width:768px; margin:0 auto;">
     <figure>
@@ -84,7 +84,48 @@
             </figure>
 </div>
 <br>
+<p>As we can see, inside of every Mandelbrot set, there's smaller Mandelbrot sets within. (If you're wondering why some parts of the image are gray, gray pixels denote points that go to infinity, but the darker the shade, the slower it diverges.) Cool!</p>
+<p>The Mandelbrot set, of course is very popular and famous fractal, but many of its properties are still unknown, including its area. If you'd like to read more about the Mandelbrot set, you can read the Wikipedia article <a href="https://en.wikipedia.org/wiki/Mandelbrot_set">here</a>, or play around with zooming into the set <a href="http://www.atopon.org/mandel/">here</a>.</p>
+<p>Remember the numbers produced by the function \(f_c\)? Well, they're complex numbers, and that means they can be graphed! Let's draw lines between them on a coordinate grid to see their movements.</p>
+<div style="width:768px; margin:0 auto;">
+    <figure>
+        <img src="article1/mandelbrot7.png" alt="Mandelbrot Set" width="768">
+            <figcaption><p align="center">Figure 8: The Mandelbrot set, path of iteration for \(c=0.2+0.5i\).</p></figcaption>
+            </figure>
+</div>
+<br>
+<p>We can see that the lines converge towards a certain point, slowly circling around it. This is true for any other point in the main <strong>cardioid</strong>, which is the sideways, heart-shaped object comprising most of the Mandelbrot set's area. Let's try a point outside of the main cardioid, say, \(c=-1.311687+0.062514i\)! (The point \(c\) is indicated with the arrow.)</p>
+<div style="width:768px; margin:0 auto;">
+    <figure>
+        <img src="article1/mandelbrot8.png" alt="Mandelbrot Set" width="768">
+            <figcaption><p align="center">Figure 9: The Mandelbrot set, path of iteration for \(c=-1.311686879823594+0.06251378169790517i\).</p></figcaption>
+            </figure>
+</div>
+<br>
+<p>This point is situated in a much stranger part of the Mandelbrot set, and as you can see, no pattern is clear in its iteration. It is these kinds of points that give the Mandelbrot set, and related fractals, their complexity.</p>
+<p>Of course, a natural question is: what happens when you change the function \(f_c(z)\)? Well, let's try it!</p>
+<div style="width:768px; margin:0 auto;">
+    <figure>
+        <img src="article1/fractal1.png" alt="Fractal" width="512">
+            <figcaption><p align="center">Figure 10: Fractal for \(f_c(z)=z^3+c\).</p></figcaption>
+            </figure>
+</div>
+<br>
+<div style="width:768px; margin:0 auto;">
+    <figure>
+        <img src="article1/fractal2.png" alt="Fractal" width="512">
+            <figcaption><p align="center">Figure 11: Fractal for \(f_c(z)=z^3-z^2+c\).</p></figcaption>
+            </figure>
+</div>
+<br><div style="width:768px; margin:0 auto;">
+    <figure>
+        <img src="article1/fractal3.png" alt="Fractal" width="512">
+            <figcaption><p align="center">Figure 12: Fractal for \(f_c(z)=z^3+c\).</p></figcaption>
+            </figure>
+</div>
+<br>
 
-<p>The Mandelbrot set, of course is very popular and famous fractal, but many of its properties are still unknown, including its area.</p>
+<p>Beautiful. They share certain characteristics... but they're all different.</p>
+<p>Hopefully this has been a good introduction to fractals in the complex plane!</p>
 
 </html>
