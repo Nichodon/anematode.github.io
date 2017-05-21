@@ -28,6 +28,13 @@ document.getElementById("footerPlaceholder").innerHTML =
 '<!-- Section Three -->'+
 '<section class="one_third lastbox">'+
 '<h2 class="title">Contact Us</h2>'+
-'<p>FTCTeam11101@gmail.com</p>'+
+'<a href = "mailto:FTCTeam11101@gmail.com">FTCTeam11101@gmail.com</a>'+
 '</section>'+
-'<!-- / Section -->'
+'<!-- / Section -->';
+document.getElementById("bottom").innerHTML =
+'<div class="wrapper row4">' +
+  '<footer id="copyright" class="clear">' +
+    '<p class="fl_left">Copyright &copy; 2017 - All Rights Reserved - <a href="index.html">FTC Team 11101</a></p>' +
+    '<p class="fl_right">Template by <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>' +
+  '</footer>' +
+'</div>';
