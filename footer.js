@@ -28,6 +28,6 @@ document.getElementById("footerPlaceholder").innerHTML =
 '<!-- Section Three -->'+
 '<section class="one_third lastbox">'+
 '<h2 class="title">Contact Us</h2>'+
-'<p>FTCTeam11101@gmail.com</p>'+
+'<a href = "mailto:FTCTeam11101@gmail.com">FTCTeam11101@gmail.com</a>'+
 '</section>'+
 '<!-- / Section -->'
