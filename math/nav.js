@@ -10,6 +10,6 @@ document.getElementById("navMenu").innerHTML =
         '<li><a href="#">Programming</a></li>'+
         '<li><a href="#">Other Math</a></li>'+
         '<li><a href="#">Calculators</a></li>'+
-        '<li class="last"><a href="about.html">Math Worksheets</a></li>'+
+        '<li class="last"><a href="#">Math Worksheets</a></li>'+
     '</ul>'+
 '</nav>'
