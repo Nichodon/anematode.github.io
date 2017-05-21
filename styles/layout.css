@@ -76,6 +76,10 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 .two_third{width:630px;}
 .three_third{width:960px; float:none; margin-right:0; clear:both;}
 
+.one_third img {
+    height: auto;
+}
+
 .lastbox{margin-right:0;}
 
 /*----------------------------------------------Header-------------------------------------*/
