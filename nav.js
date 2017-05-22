@@ -18,4 +18,4 @@ document.getElementById("navMenu").innerHTML =
         '<li><a href="#">FTC Info</a></li>'+
         '<li class="last"><a href="about.html">About Us</a></li>'+
     '</ul>'+
-'</nav>'
+'</nav>';
