@@ -9,13 +9,13 @@ document.getElementById("navMenu").innerHTML =
 		'<li class="dropdown">' +
     		'<a href="javascript:void(0)">Seasons</a>' +
 			'<div class="dropdown-content">' +
-				'<a href="#" class="drop">2016</a>' +
-   				'<a href="#" class="drop">2017</a>' +
-				'<a href="#" class="drop">2018</a>' +
+				'<a href="#" class="drop">2016 &ndash; 2017</a>' +
+   				'<a href="#" class="drop">2017 &ndash; 2018</a>' +
+				'<a href="#" class="drop">2018 &ndash; 2019</a>' +
    			'</div>' +
   		'</li>' +
         '<li><a href="#">Our Robots</a></li>'+
         '<li><a href="#">FTC Info</a></li>'+
         '<li class="last"><a href="about.html">About Us</a></li>'+
     '</ul>'+
-'</nav>'
+'</nav>';

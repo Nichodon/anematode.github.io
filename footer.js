@@ -28,7 +28,15 @@ document.getElementById("footerPlaceholder").innerHTML =
 '<!-- Section Three -->'+
 '<section class="one_third lastbox">'+
 '<h2 class="title">Contact Us</h2>'+
-'<a href = "mailto:FTCTeam11101@gmail.com">FTCTeam11101@gmail.com</a>'+
+'<nav>' +
+'<ul>'+
+'<li><a href = "mailto:FTCTeam11101@gmail.com">FTCTeam11101@gmail.com</a></li>'+
+'<li><a href="#">Link 2</a></li>'+
+'<li><a href="#">Link 3</a></li>'+
+'<li><a href="#">Link 4</a></li>'+
+'<li class="last"><a href="about">About Us</a></li>'+
+'</ul>'+
+'</nav>'+
 '</section>'+
 '<!-- / Section -->';
 document.getElementById("bottom").innerHTML =
