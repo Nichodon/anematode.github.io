@@ -34,7 +34,7 @@ document.getElementById("footerPlaceholder").innerHTML =
 '<li><a href="#">Link 2</a></li>'+
 '<li><a href="#">Link 3</a></li>'+
 '<li><a href="#">Link 4</a></li>'+
-'<li class="last"><a href="about">About Us</a></li>'+
+'<li class="last"><a href="https://anematode.github.io/about/">About Us</a></li>'+
 '</ul>'+
 '</nav>'+
 '</section>'+
@@ -42,7 +42,7 @@ document.getElementById("footerPlaceholder").innerHTML =
 document.getElementById("bottom").innerHTML =
 '<div class="wrapper row4">' +
   '<footer id="copyright" class="clear">' +
-    '<p class="fl_left">Copyright &copy; 2017 - All Rights Reserved - <a href="index.html">FTC Team 11101</a></p>' +
+    '<p class="fl_left">Copyright &copy; 2017 - All Rights Reserved - <a href="https://anematode.github.io/">FTC Team 11101</a></p>' +
     '<p class="fl_right">Template by <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>' +
   '</footer>' +
 '</div>';
