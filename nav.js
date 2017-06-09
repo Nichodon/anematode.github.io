@@ -7,7 +7,7 @@ document.getElementById("navMenu").innerHTML =
     '<ul>'+
         '<li><a href="https://anematode.github.io/">Home</a></li>'+
 		'<li class="dropdown">' +
-    		'<a href="javascript:void(0)">Seasons</a>' +
+    		'<a href="">Seasons</a>' +
 			'<div class="dropdown-content">' +
 				'<a href="#" class="drop">2016 &ndash; 2017</a>' +
    				'<a href="#" class="drop">2017 &ndash; 2018</a>' +
