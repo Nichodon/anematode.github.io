@@ -1,7 +1,7 @@
 document.getElementById("navMenu").innerHTML =
 '<div id="hgroup">'+
-    '<h1><a href="https://anematode.github.io/">FTC Team 11101</a></h1>'+
-    '<h2>Robot Fanatics</h2>'+
+    '<h1><a href="https://anematode.github.io/">Insert Name Here</a></h1>'+
+    '<h2>FTC Team 11101</h2>'+
 '</div>'+
 '<nav>'+
     '<ul>'+
