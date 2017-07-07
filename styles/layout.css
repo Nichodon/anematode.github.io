@@ -100,7 +100,7 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 #header nav li a:not(.drop):hover{color:#FF9900; background-color:#232323; text-shadow:none;}
 
 .dropdown-content {display:none; position:absolute; background-color:#919191; min-width:150px; box-shadow:2px 2px 10px #232323; z-index:1;}
-.drop {color:#000000; padding:10px 15px; text-decoration:none; display:block; text-align:left;}
+.drop {color:#333333; padding:10px 15px; text-decoration:none; display:block; text-align:left;}
 .drop:hover{color:#FF9900; background-color:#333333; text-shadow:none;}
 
 .dropdown:hover .dropdown-content{display:block; animation:fade 0.5s;}
