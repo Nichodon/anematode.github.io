@@ -3,21 +3,21 @@
 	padding: 0;
 	font-size: 0;
 }
-html, body {
-	background-color: #333;
-	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-    height: 100%;
-}
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
 	opacity: 0;
 }
-body::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
 	background-color: #333;
 	-webkit-box-shadow: inset 0 0 15px #bbb;
 	box-shadow: inset 0 0 15px #bbb;
 }
-body::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
 	background-color: #bbb;	
+}
+html, body {
+	background-color: #333;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+    height: 100%;
 }
 h1,
 p,
@@ -103,10 +103,10 @@ button:focus {
     background-size: cover;
 }
 .front {
-	position: absolute;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	position: absolute;
 	text-align: center;
+	transform: translate(-50%, -50%);
 }
 .full .front {
 	top: 50%;
@@ -116,20 +116,26 @@ button:focus {
 }
 .third {
 	display: inline-block;
-	text-align: center;
 	margin: 10px 0;
+	text-align: center;
 	vertical-align: top;
 	width: calc(100% / 3);
 }
+.img::before {
+	content: "";
+	display: block;
+	padding-top: 100%;
+}
 .img {
 	background-size: cover;
-	background-position: center center;
+	background-position: center;
 	border-radius: 1000px;
 	margin: auto;
-	padding-top: 50%;
+	max-width: 250px;
+	position: relative;
 	width: 50%;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
 	.third {
 		width: 100%;
 	}
