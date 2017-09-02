@@ -24,10 +24,11 @@ p,
 a {
 	color: #fff;
 	letter-spacing: 1px;
+	text-decoration: none;
 }
 h1 {
 	font-size: 30px;
-	line-height: 40px;
+	line-height: 50px;
 }
 p,
 a {
@@ -73,6 +74,15 @@ button:focus {
 	left: 0;
 	right: 0;
 }
+.footer {
+	background-color: #000;
+	text-align: center;
+	padding: 10px;
+}
+.footer p,
+.footer a {
+	color: #bbb;
+}
 .full {
     height: 100%; 
 	overflow: hidden;
@@ -91,10 +101,15 @@ button:focus {
 }
 .front {
 	position: absolute;
-	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
+}
+.full .front {
+	top: 50%;
+}
+.half .front {
+	top: 25%;
 }
 .third {
 	display: inline-block;

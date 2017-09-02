@@ -1,4 +1,5 @@
 var navbar = document.getElementById("navbar");
+var footer = document.getElementById("footer");
 
 navbar.innerHTML =
 	'<div>' +
@@ -15,8 +16,11 @@ navbar.innerHTML =
 	'<a>2018 &ndash; 2019</a>' +
 	'</div>';
 
+footer.innerHTML =
+	'<p>Copyright &copy; Team Steam 2017 &ndash; <a>Top</a></p>';
+
 navbar.children[0].style.position = "absolute";
-navbar.children[1].style.transform = "translate(0, 100%)";
+navbar.children[1].style.transform = "translate(0, 200%)";
 
 document.getElementById("d1").onclick = function() {
 	"use strict";
@@ -30,6 +34,11 @@ document.getElementById("d2").onclick = function() {
 	navbar.children[1].style.transform = "translate(0, 200%)";
 };
 
+footer.children[0].children[0].onclick = function() {
+	"use strict";
+	scroll();
+};
+
 var parallax = document.getElementById("parallax");
 
 window.onscroll = function() {
@@ -37,3 +46,14 @@ window.onscroll = function() {
 	var rate = document.body.scrollTop * 25 / parallax.offsetHeight;
 	parallax.style.transform = "translate(0%, " + rate + "%)";
 };
+
+function scroll() {
+	"use strict";
+    if (document.body.scrollTop === 0) {
+		return;
+	}
+	document.body.scrollTop -= 100;
+    setTimeout(function() {
+		scroll();
+    }, 10);
+}
