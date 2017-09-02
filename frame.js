@@ -3,10 +3,10 @@ var footer = document.getElementById("footer");
 
 navbar.innerHTML =
 	'<div>' +
-	'<a>Home</a>' +
+	'<a href="https://anematode.github.io/">Home</a>' +
 	'<a id="d1">Seasons &#9662;</a>' +
 	'<a>Robots</a>' +
-	'<a>About</a>' +
+	'<a href="https://anematode.github.io/about/">About</a>' +
 	'<a>Contribute</a>' +
 	'</div>' + 
 	'<div>' +
