@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
+html, body {
+	background-color: #333;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+    height: 100%;
+}
+body::-webkit-scrollbar {
+	opacity: 0;
+}
+body::-webkit-scrollbar-thumb {
+	background-color: #333;
+	-webkit-box-shadow: inset 0 0 15px #bbb;
+	box-shadow: inset 0 0 15px #bbb;
+}
+body::-webkit-scrollbar-track {
+	background-color: #bbb;	
+}
+h1,
+p,
+a {
+	color: #fff;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+h1 {
+	font-size: 30px;
+	line-height: 50px;
+}
+p,
+a {
+	font-size: 15px;
+	line-height: 25px;
+}
+p {
+	margin: 10px;
+}
+button {
+	background-color: rgba(0, 0, 0, 0);
+	color: #fff;
+	padding: 10px;
+	border-radius: 100px;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font-size: 20px;
+	border: 2.5px solid #bbb;
+	transition: 0.25s;
+}
+button:hover {
+	background-color: rgba(204, 119, 51, 0.5);
+}
+button:focus {
+	outline: none;
+}
+.navbar {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-y: hidden;
+	z-index: 1;
+	width: 100%;
+	text-align: center;
+	white-space: nowrap;
+}
+.navbar a {
+	display: inline-block;
+	transition: 0.125s;
+	padding: 20px;
+}
+.navbar a:hover {
+	background-color: rgba(51, 51, 51, 0.5);
+}
+.navbar div {
+	transition: 0.25s;
+	left: 0;
+	right: 0;
+}
+.footer {
+	background-color: #000;
+	text-align: center;
+	padding: 10px;
+}
+.footer p,
+.footer a {
+	color: #bbb;
+}
+.full {
+    height: 100%; 
+	overflow: hidden;
+}
+.half {
+	height: 50%;
+	overflow: hidden;
+}
+.parallax {
+    height: 100%; 
+	filter: brightness(0.375);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.front {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.full .front {
+	top: 50%;
+}
+.half .front {
+	top: 25%;
+}
+.third {
+	display: inline-block;
+	text-align: center;
+	margin: 10px 0;
+	vertical-align: top;
+	width: calc(100% / 3);
+}
+.img {
+	background-size: cover;
+	background-position: center center;
+	border-radius: 1000px;
+	margin: auto;
+	padding-top: 50%;
+	width: 50%;
+}
+@media only screen and (max-width: 425px) {
+	.third {
+		width: 100%;
+	}
+}
