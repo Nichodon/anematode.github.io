@@ -18,6 +18,7 @@ html, body {
 	background-color: #333;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
     height: 100%;
+	text-align: center;
 }
 h1,
 p,
@@ -62,7 +63,6 @@ button:focus {
 	overflow-y: hidden;
 	z-index: 1;
 	width: 100%;
-	text-align: center;
 	white-space: nowrap;
 }
 .navbar a {
@@ -80,7 +80,6 @@ button:focus {
 }
 .footer {
 	background-color: #000;
-	text-align: center;
 	padding: 10px;
 }
 .footer p,
@@ -105,7 +104,6 @@ button:focus {
 .front {
 	left: 50%;
 	position: absolute;
-	text-align: center;
 	transform: translate(-50%, -50%);
 }
 .full .front {
@@ -117,7 +115,7 @@ button:focus {
 .third {
 	display: inline-block;
 	margin: 10px 0;
-	text-align: center;
+	max-width: 500px;
 	vertical-align: top;
 	width: calc(100% / 3);
 }
