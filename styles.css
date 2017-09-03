@@ -18,6 +18,7 @@ html, body {
 	background-color: #333;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
     height: 100%;
+	text-align: center;
 }
 h1,
 p,
@@ -28,15 +29,17 @@ a {
 }
 h1 {
 	font-size: 30px;
-	line-height: 50px;
+	line-height: 70px;
 }
 p,
 a {
 	font-size: 15px;
 	line-height: 25px;
 }
+h1,
 p {
-	margin: 10px;
+	padding: 60px;
+	padding: 20px;
 }
 button {
 	background-color: rgba(0, 0, 0, 0);
@@ -62,7 +65,6 @@ button:focus {
 	overflow-y: hidden;
 	z-index: 1;
 	width: 100%;
-	text-align: center;
 	white-space: nowrap;
 }
 .navbar a {
@@ -80,7 +82,6 @@ button:focus {
 }
 .footer {
 	background-color: #000;
-	text-align: center;
 	padding: 10px;
 }
 .footer p,
@@ -105,7 +106,6 @@ button:focus {
 .front {
 	left: 50%;
 	position: absolute;
-	text-align: center;
 	transform: translate(-50%, -50%);
 }
 .full .front {
@@ -117,7 +117,7 @@ button:focus {
 .third {
 	display: inline-block;
 	margin: 10px 0;
-	text-align: center;
+	max-width: 500px;
 	vertical-align: top;
 	width: calc(100% / 3);
 }
@@ -133,6 +133,41 @@ button:focus {
 	margin: auto;
 	max-width: 250px;
 	position: relative;
+	width: 50%;
+}
+.left {
+	background-color: #c84;
+	text-align: left;
+}
+.right {
+	background-color: #146;
+	text-align: right;
+}
+.left,
+.right {
+	position: relative;
+	width: 100%;
+}
+.right img {
+	left: calc(200% / 3);
+}
+.left img,
+.right img {
+	object-fit: cover;
+	position: absolute;
+	height: 100%;
+	width: calc(100% / 3);
+}
+.left div {
+	background-color: #c73;
+	margin-left: calc(100% / 3);
+}
+.right div {
+	background-color: #134;
+	margin-left: calc(100% / 6);
+}
+.left div,
+.right div {
 	width: 50%;
 }
 @media only screen and (max-width: 768px) {
