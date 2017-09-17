@@ -7,7 +7,7 @@ navbar.innerHTML =
 	'<a id="d1">Seasons &#9662;</a>' +
 	'<a>Robots</a>' +
 	'<a href="https://anematode.github.io/about/">About</a>' +
-	'<a href="sponsor/sponsor.html">Sponsorship</a>' +
+	'<a href="https://anematode.github.io/sponsor/">Sponsorship</a>' +
 	'<a>Contribute</a>' +
 	'</div>' +
 	'<div>' +
