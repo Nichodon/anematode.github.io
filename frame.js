@@ -5,7 +5,6 @@ navbar.innerHTML =
 	'<div>' +
 	'<a href="https://anematode.github.io/">Home</a>' +
 	'<a id="d1">Seasons &#9662;</a>' +
-	'<a>Robots</a>' +
 	'<a href="https://anematode.github.io/about/">About</a>' +
 	'<a href="https://anematode.github.io/sponsor/">Sponsorship</a>' +
 	'<a>Contribute</a>' +
@@ -17,7 +16,7 @@ navbar.innerHTML =
 	'</div>';
 
 footer.innerHTML =
-	'<p>Copyright &copy; Team Steam 2017 &ndash; <a>Top</a></p>';
+	'<p>Copyright &copy; Team Steam 2017 &ndash; <a href="#">Top</a></p>';
 
 navbar.children[0].style.position = "absolute";
 navbar.children[1].style.transform = "translate(0, 200%)";
