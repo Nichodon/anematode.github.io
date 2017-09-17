@@ -12,9 +12,8 @@ navbar.innerHTML =
 	'</div>' +
 	'<div>' +
 	'<a id="d2">&#9652;</a>' +
-	'<a>2016 &ndash; 2017</a>' +
-	'<a>2017 &ndash; 2018</a>' +
-	'<a>2018 &ndash; 2019</a>' +
+	'<a href="https://anematode.github.io/seasons/2016-2017.html">2016 &ndash; 2017</a>' +
+	'<a href="https://anematode.github.io/seasons/2017-2018.html">2017 &ndash; 2018</a>' +
 	'</div>';
 
 footer.innerHTML =
