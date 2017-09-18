@@ -17,7 +17,7 @@ navbar.innerHTML =
 	'</div>';
 
 footer.innerHTML =
-	'<p>Copyright &copy; Team Steam 2017 &ndash; <a>Top</a></p>';
+	'<p>Copyright &copy; Team Steam 2017 &ndash; <a>Top</a><br>Website by <a href="https://github.com/Nichodon">Nichodon</a></p>';
 
 navbar.children[0].style.position = "absolute";
 navbar.children[1].style.transform = "translate(0, 200%)";
