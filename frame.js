@@ -3,16 +3,16 @@ var footer = document.getElementById("footer");
 
 navbar.innerHTML =
 	'<div>' +
-	'<a href="https://anematode.github.io/">Home</a>' +
+	'<a href="https://anematode.github.io">Home</a>' +
 	'<a id="d1">Seasons &#9662;</a>' +
-	'<a href="https://anematode.github.io/about/">About</a>' +
-	'<a href="https://anematode.github.io/sponsor/">Sponsorship</a>' +
+	'<a href="https://anematode.github.io/about">About</a>' +
+	'<a href="https://anematode.github.io/sponsor">Sponsorship</a>' +
 	'<a>Contribute</a>' +
 	'</div>' +
 	'<div>' +
 	'<a id="d2">&#9652;</a>' +
-	'<a href="https://anematode.github.io/seasons/2016-2017.html">2016 &ndash; 2017</a>' +
-	'<a href="https://anematode.github.io/seasons/2017-2018.html">2017 &ndash; 2018</a>' +
+	'<a href="https://anematode.github.io/seasons/2016">2016 &ndash; 2017</a>' +
+	'<a href="https://anematode.github.io/seasons/2017">2017 &ndash; 2018</a>' +
 	'</div>';
 
 footer.innerHTML =
