@@ -42,16 +42,16 @@ var parallax = document.getElementById("parallax");
 
 window.onscroll = function() {
 	"use strict";
-	var rate = document.body.scrollTop * 25 / parallax.offsetHeight;
+	var rate = window.scrollY * 25 / parallax.offsetHeight;
 	parallax.style.transform = "translate(0%, " + rate + "%)";
 };
 
 function scroll() {
 	"use strict";
-    if (document.body.scrollTop === 0) {
+    if (window.scrollY === 0) {
 		return;
 	}
-	document.body.scrollTop -= 100;
+	window.scrollY -= 100;
     setTimeout(function() {
 		scroll();
     }, 10);
