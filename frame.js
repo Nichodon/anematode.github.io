@@ -51,7 +51,7 @@ function scroll() {
     if (window.scrollY === 0) {
 		return;
 	}
-	window.scrollY -= 100;
+	window.scrollTo(0, window.scrollY - 100);
     setTimeout(function() {
 		scroll();
     }, 10);
